@@ -14,6 +14,7 @@ class UserController {
         return res.json(user);
     }
 
+
     public async create(req: Request, res: Response): Promise<Response<ICommonResponse<IUser>>> {
         const body = req.body;
         const user = await User.create(body);
